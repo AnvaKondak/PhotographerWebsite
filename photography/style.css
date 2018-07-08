@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+@import url('https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise');
+
+html, body {
+width: 100%;
+height: 100%;
+margin: 0px;
+padding: 0px;
+}
+
+
+.preview {
+  background: url('pics/o.jpg') no-repeat center;
+  -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+overflow: hidden;
+display: table;
+height: 100%;
+width: 100%;
+position: relative;
+  opacity: 0;
+  transition: 1.3s ease-in-out;
+}
+
+.preview.show {
+opacity: 1;
+
+}
+
+.preview1 {
+  background: url('pics/s.jpg') no-repeat center;
+  -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+ overflow: hidden;
+display: table;
+height: 100%;
+width: 100%;
+position: relative;
+}
+
+@media (min-width: 1025px){
+  .preview, .preview1 {background-attachment: fixed;}
+}
+@media (max-width: 600px){
+   .preview1 {
+     opacity: 0;
+     transition: .7s;
+   }
+   .preview1.show {
+   opacity: 1;
+
+
+}
+}
+
+body{
+ overflow-x: hidden;
+}
+.brandName {
+  font-family: 'Great Vibes', cursive;
+  padding-top: 10%;
+   font-size: 40px;
+    text-align: center;
+    opacity: 0;
+    transition: 1.3s ease-in-out;
+}
+
+.brandName.show{
+  opacity: 1;
+}
+
+
+.headerText{
+  font-family: sans-serif;
+  font-size: 40px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  padding-top: 18%;
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+}
+
+.headerText1{
+  font-family: sans-serif;
+  font-size: 40px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  padding-top: 18%;
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  opacity: 0;
+  transition: 0.9s ease-in-out;
+}
+.headerText1.show{
+  opacity: 1;
+}
+
+.des {
+  opacity: 0;
+  transition: 0.9s ease-in-out;
+}
+.des.show{
+  opacity:1;
+}
+
+
+
+.myWork{
+  opacity: 0;
+  transition: .6s ease-in-out;
+}
+
+.myWork.show {
+  opacity: 1;
+}
+p{
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  font-size: 18px;
+    color: #696969;
+}
+
+#aboutContent{
+    padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+#slideshow {
+    margin: 50px auto;
+    position: relative;
+    width: 340px;
+    height: 340px;
+    padding: 10px;
+    box-shadow: 10px 20px 10px rgba(0,0,0,0.4);
+}
+
+@media (min-width: 1000px){
+  #bio {
+    padding-right: 15%;
+  }
+}
+#slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-above {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+#navbarNavAltMarkup {
+  padding-right: 80px;
+  font-size: 16px;
+}
+
+.navbar-toggler {
+opacity: .8;/* Removes border color */
+background-color: transparent;
+  float:left; /* Move navbar toggle to left */
+  max-height: 35px;
+    max-width: 40px;
+    border-radius: 4%;
+    margin-left: 5%;
+}
+.navbar-header .navbar-toggler .icon-bar {
+  background-color: transparent; /* Changes regular toggle color */
+  z-index: 1000px;
+}
+
+@media (min-width: 760px){
+  .navbar-toggler img{
+  opacity: 0;
+  }
+}
+.navbar .navbar-collapse {
+text-align: center;
+}
+.nav.navbar-nav.navbar-fixed-top li a {
+    color: #fff;
+}
+
+ul.nav a:hover { color: lightGrey !important; }
+
+@keyframes fade-above {
+  from {
+    margin-top: 70%;
+  }
+
+  to {
+    margin-bottom: 50%;
+  }
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+.headerP {
+  animation-duration: 2.1s;
+  animation-name: fade-above;
+  animation-direction: normal;
+  font-family: 'Nunito', sans-serif;
+}
+
+.headerp{
+  animation-duration: 2.3s;
+  animation-name: fade-above;
+  animation-direction: normal;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+#back-to-top{
+  cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+     display:none;
+    color: grey;
+    background-color: white;
+    opacity: 0.4;
+}
+
+
+.fa {
+  padding: 15px;
+  /* font-size: 65px; */
+  color: #000;
+}
+
+.fa: hover {
+color: grey;
+text-decoration: none;
+}
+
+.fa .fa-envelope-o, .fa .fa-instagram {
+  font-size: 26px;
+}
+
+@media (max-width: 708px) {
+  .fa {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .brandName {
+    padding-left: 20%;
+    padding-right:20%;
+  }
+
+  html, body {
+   overflow-x: hidden;
+    overflow-y: visible;
+  }
+
+  #back-to-top{
+    visibility: hidden;
+    clear: both;
+    display: none;
+  }
+
+}
+
+ @media (max-width: 1308px) {
+.container1 {
+  padding-bottom: 5%;
+  opacity: 0;
+  transition: 1.6s ease-in-out;
+}
+
+.container1.show {
+  opacity: 1;
+}
+}
+
+
+footer {
+width: 100%;
+background-color: #fff;
+height: 20px;
+padding-bottom: 5%;
+padding-top: 6%;
+}
